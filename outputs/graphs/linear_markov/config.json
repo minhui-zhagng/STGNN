@@ -1,0 +1,114 @@
+{
+  "data_root": "E:/STGNN_CODE/code/code/STGNN/XJTU-SY_Bearing_Datasets/Data/XJTU-SY_Bearing_Datasets.part01/XJTU-SY_Bearing_Datasets",
+  "output_root": "outputs",
+  "train_bearings": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "test_bearings": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "condition_folders": {
+    "1": "35Hz12kN",
+    "2": "37.5Hz11kN",
+    "3": "40Hz10kN"
+  },
+  "file_counts": {
+    "1_1": 123,
+    "1_2": 161,
+    "1_3": 158,
+    "1_4": 122,
+    "1_5": 52,
+    "2_1": 491,
+    "2_2": 161,
+    "2_3": 533,
+    "2_4": 42,
+    "2_5": 339,
+    "3_1": 2538,
+    "3_2": 2496,
+    "3_3": 371,
+    "3_4": 1515,
+    "3_5": 114
+  },
+  "edge_modes": [
+    "no_edge",
+    "markov",
+    "linear",
+    "exponential",
+    "linear_markov",
+    "exponential_markov"
+  ],
+  "alpha": 0.9,
+  "beta": 5,
+  "epochs": 15,
+  "learning_rate": 0.0001,
+  "batch_size": 1,
+  "hidden_dimension": 128,
+  "seed": 13,
+  "margin_coefficient": 0.5,
+  "labeling": {
+    "channel": 1,
+    "window_size": 20480,
+    "baseline_ratio": 0.3,
+    "N": 3,
+    "K": 3
+  },
+  "edge_mode": "linear_markov"
+}
